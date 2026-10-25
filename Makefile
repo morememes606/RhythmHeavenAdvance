@@ -76,7 +76,7 @@ ifdef GIT_COMMIT
 C_DEFINES += -DGIT_COMMIT_STR=\"$(GIT_COMMIT)\"
 endif
 
-CFLAGS := -mthumb-interwork -Wparentheses -fhex-asm-DTEMPOUP
+CFLAGS := -DTEMPOUP-mthumb-interwork -Wparentheses -fhex-asm
 CPPFLAGS := -I tools/agbcc -I tools/agbcc/include -I . -iquote include -nostdinc -undef $(C_DEFINES)
 
 ifeq ($(DEBUG), 1)
